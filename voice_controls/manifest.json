@@ -1,0 +1,22 @@
+{
+  "name": "Voice Controls",
+  "version": "0.2.1",
+  "description": "Recognizes your speech and perform actions.",
+
+  "browser_action": {
+    "default_title": "Voice Controls",
+    "default_icon": "start.png"
+  },
+
+  "background": { "scripts": ["background.js","actions.js"] },
+  "icons": { "16": "voice_16.png",
+             "48": "voice_48.png",
+            "128": "voice_128.png" },
+
+  "permissions": [
+    "<all_urls>",
+    "tabs",
+    "experimental"
+  ],
+  "manifest_version": 2
+}
